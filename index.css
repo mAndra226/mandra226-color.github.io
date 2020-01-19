@@ -5,7 +5,7 @@ body {
 	text-transform: uppercase;
 	letter-spacing: .5em;
 	top: 15%;
-	background: linear-gradient(to right, red, yellow);
+	background: linear-gradient(to right, rgb(72, 91, 183), rgb(255, 0, 0));;
 }
 
 h1 {
@@ -24,15 +24,29 @@ h2 {
 
 h3 {
 	font: 900 1em 'Raleway', sans-serif;
-	color: white;
+	color: black;
 	text-align: center;
 	text-transform: none;
 	letter-spacing: 0.01em;
 }
 
-input {
+input[type=color] {
 	border-radius: 4px;
 	width: 5em;
 	height: 2em;
 	cursor: pointer;
+	outline: none;
+	transition: all ease-in-out .5s;
+}
+
+input:hover {
+	-ms-transform: scale(1.25, 1.5); /* IE 9 */
+	-o-transform: scale(1.25, 1.5); /* IE 9 */
+    -webkit-transform: scale(1.25, 1.5); /* Safari prior 9.0 */
+    transform: scale(1.25, 1.5); /* Standard syntax */
+
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 12px 18px 1px rgba(0,0,0,0);
+    -ms-box-shadow: 0px 10px 13px -7px #000000, 0px 12px 18px 1px rgba(0,0,0,0);
+    -o-box-shadow: 0px 10px 13px -7px #000000, 0px 12px 18px 1px rgba(0,0,0,0);
+    box-shadow: 0px 10px 13px -7px #000000, 0px 12px 18px 1px rgba(0,0,0,0);
 }
